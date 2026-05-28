@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>발산 마사지 링크 - 정보</title>
+    <meta name="description" content="발산 마사지 링크 정보 페이지입니다. 발산동 위치, 운영시간, 가격, 서비스 종류 등 궁금한 모든 것을 확인하세요. 힐링이 필요하다면 지금 전화주세요! 010-6279-0862">
+    <meta name="keywords" content="발산 마사지 링크 정보, 발산동 마사지, 발산역 마사지, 마사지 가격, 마사지 위치, 강서구 마사지, 발산 마사지샵, 마사지 예약">
+    <link rel="canonical" href="https://t3b01-bs-massage-link.pages.dev/info">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <meta property="og:title" content="발산 마사지 링크 - 정보">
+    <meta property="og:description" content="발산 마사지 링크의 모든 정보를 한눈에! 위치, 가격, 서비스, 예약 방법까지 확인하세요.">
+    <meta property="og:image" content="https://t3b01-bs-massage-link.pages.dev/og-image.jpg">
+    <meta property="og:url" content="https://t3b01-bs-massage-link.pages.dev/info">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="발산 마사지 링크 - 정보">
+    <meta name="twitter:description" content="발산 마사지 링크에 대한 모든 것. 위치, 가격, 서비스 종류, 예약 방법을 확인하세요.">
+    <style>
+        /* RESET & BASE */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 100%; -webkit-text-size-adjust: 100%; }
+        body {
+            font-family: 'Helvetica Neue', 'Arial', sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        img, svg { max-width: 100%; display: block; }
+        a { color: #ff4d4d; text-decoration: underline; text-underline-offset: 2px; }
+        a:hover { color: #ff6666; }
+        ul { list-style: none; }
+
+        /* BRUTALIST BASE */
+        h1 {
+            font-size: clamp(2.8rem, 8vw, 5rem);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            line-height: 0.9;
+            color: #fff;
+            text-shadow: 4px 4px 0 #ff4d4d, 8px 8px 0 #1a1a1a;
+        }
+        h2 {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 800;
+            text-transform: uppercase;
+            border-left: 8px solid #ff4d4d;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+        h3 {
+            font-size: clamp(1.4rem, 3vw, 2rem);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #ff4d4d;
+        }
+        p, li { font-size: clamp(1rem, 2vw, 1.15rem); margin-bottom: 1rem; }
+        .accent { color: #ff4d4d; font-weight: 700; }
+        .border-accent { border: 3px solid #ff4d4d; }
+        .bg-accent { background: #ff4d4d; color: #0a0a0a; }
+        .border-white { border: 3px solid #fff; }
+        .border-black { border: 3px solid #000; }
+
+        /* LAYOUT */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .section { padding: 4rem 0; }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: #1a1a1a;
+            border: 3px solid #333;
+            padding: 2rem;
+            transition: all 0.2s;
+        }
+        .card:hover { border-color: #ff4d4d; transform: translate(-4px, -4px); box-shadow: 8px 8px 0 #ff4d4d; }
+
+        /* NAV */
+        .navbar {
+            background: #111;
+            border-bottom: 4px solid #ff4d4d;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: -1px;
+        }
+        .nav-logo .accent { color: #ff4d4d; }
+        .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+        .nav-links a {
+            color: #ccc;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            padding: 0.25rem 0.5rem;
+            border: 2px solid transparent;
+        }
+        .nav-links a:hover, .nav-links a.active { color: #fff; border-color: #ff4d4d; }
+        .hamburger { display: none; cursor: pointer; flex-direction: column; gap: 5px; }
+        .hamburger span { width: 30px; height: 4px; background: #fff; }
+
+        /* BUTTONS */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            border: 3px solid #fff;
+            color: #fff;
+            background: transparent;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+        .btn:hover { background: #ff4d4d; color: #0a0a0a; border-color: #ff4d4d; transform: scale(1.05); }
+        .btn-primary { background: #ff4d4d; color: #0a0a0a; border-color: #ff4d4d; }
+        .btn-primary:hover { background: #ff6666; }
+
+        /* TEL LINK */
+        .tel-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #ff4d4d;
+            text-decoration: none;
+            border: 3px solid #ff4d4d;
+            padding: 0.75rem 1.5rem;
+            transition: all 0.2s;
+        }
+        .tel-link:hover { background: #ff4d4d; color: #0a0a0a; }
+
+        /* HERO */
+        .hero {
+            padding: 6rem 0 4rem;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            border-bottom: 4px solid #ff4d4d;
+        }
+        .hero h1 { margin-bottom: 1.5rem; }
+        .hero p { font-size: 1.3rem; max-width: 700px; }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 2px solid #333;
+            padding: 1.5rem 0;
+        }
+        .faq-item h3 { cursor
+</body>
+</html>
